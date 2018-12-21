@@ -82,7 +82,7 @@ namespace ToDoSkill
                 var generalTopIntent = state.GeneralLuisResult?.TopIntent().intent;
                 if (state.Tasks.Count <= 0)
                 {
-                    return await sc.NextAsync();
+                    await sc.Context.SendActivityAsync(sc.Context.Activity.CreateReply(ShowToDoResponses.NoToDoTasksPrompt));
                 }
                 else
                 {
@@ -132,9 +132,9 @@ namespace ToDoSkill
                     {
                         await sc.Context.SendActivityAsync(sc.Context.Activity.CreateReply(ShowToDoResponses.ShowingMoreTasks));
                     }
-
-                    return await sc.EndDialogAsync(true);
                 }
+
+                return await sc.EndDialogAsync(true);
             }
             catch (SkillException ex)
             {

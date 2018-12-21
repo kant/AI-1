@@ -38,14 +38,10 @@
   "NoToDoTasksPrompt": {
     "replies": [
       {
-        "text": "Your list is empty. Do you want to add something?",
-        "speak": "Your list is empty. Do you want to add something?"
-      },
-      {
-        "text": "Your list has no tasks. Want to add a new one?",
-        "speak": "Your list has no tasks. Want to add a new one?"
+        "text": "It seems you have no tasks in your {listType} list. Just let me know if you want to create a new task.",
+        "speak": "It seems you have no tasks in your {listType} list. Just let me know if you want to create a new task."
       }
     ],
-    "inputHint": "expectingInput"
+    "inputHint": "acceptingInput"
   }
 }

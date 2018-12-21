@@ -163,11 +163,56 @@
     ],
     "inputHint": "ignoringInput"
   },
-  "ShowToDoTasks": {
+  "ShowsOneTask": {
     "replies": [
       {
-        "text": "You have {taskCount} items on your list:",
-        "speak": "You have {taskCount} items on your list:"
+        "text": "You have 1 tasks:",
+        "speak": "You have 1 tasks on your {listType} list today. Your latest task is {tasks}. You can let me know if you want to add or complete a task."
+      }
+    ],
+    "inputHint": "ignoringInput"
+  },
+  "ShowTwoOrThreeTasks": {
+    "replies": [
+      {
+        "text": "You have {taskCount} tasks:",
+        "speak": "You have {taskCount} tasks on your {listType} list today. Your latest tasks are {tasks}. You can let me know if you want to add or complete a task."
+      }
+    ],
+    "inputHint": "ignoringInput"
+  },
+  "ShowTasksOverThree": {
+    "replies": [
+      {
+        "text": "You have {taskCount} tasks:",
+        "speak": "You have {taskCount} tasks on your {listType} list today. Your latest 3 tasks are {tasks}. Do you want me to read out more from your list?"
+      }
+    ],
+    "inputHint": "ignoringInput"
+  },
+  "ShowsOneMoreTask": {
+    "replies": [
+      {
+        "text": "You have 1 tasks:",
+        "speak": "The next 1 task is {tasks}. You can let me know if you want to add or complete a task."
+      }
+    ],
+    "inputHint": "ignoringInput"
+  },
+  "ShowTwoOrThreeMoreTasks": {
+    "replies": [
+      {
+        "text": "You have {taskCount} tasks:",
+        "speak": "The next {taskCount} tasks are {tasks}. You can let me know if you want to add or complete a task."
+      }
+    ],
+    "inputHint": "ignoringInput"
+  },
+  "ShowOverThreeMoreTasks": {
+    "replies": [
+      {
+        "text": "You have {taskCount} tasks:",
+        "speak": "The next 3 tasks are {tasks}. Do you want me to read out the next 3?"
       }
     ],
     "inputHint": "ignoringInput"

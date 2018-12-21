@@ -38,14 +38,10 @@
   "NoToDoTasksPrompt": {
     "replies": [
       {
-        "text": "您的事项表是空的。您需要添加第一个任务吗？",
-        "speak": "您的事项表是空的。您需要添加第一个任务吗？"
-      },
-      {
-        "text": "您的事项表是空的。需要添加一个新的？",
-        "speak": "您的事项表是空的。需要添加一个新的？"
+        "text": "您的{listType}列表是空的。如果想要创建一个新的任务，请尽管告诉我。",
+        "speak": "您的{listType}列表是空的。如果想要创建一个新的任务，请尽管告诉我。"
       }
     ],
-    "inputHint": "expectingInput"
+    "inputHint": "acceptingInput"
   }
 }
