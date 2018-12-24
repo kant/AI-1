@@ -52,7 +52,7 @@ Your new Bot project has a deployment recipe enabling the `msbot clone services`
 
 > Once deployed, review the Pricing Tiers for the created services and adjust to suit your scenario.
 
-The README.md within your created project contains an example msbot clone services command line updated with your created Bot name and a generic version is shown below. Ensure you update the authoring key from the previous step and choose the Azure datacenter location you wish to use (e.g. westus or westeurope).
+The `README.md` within your created project contains an example msbot clone services command line updated with your created Bot name and a generic version is shown below. Ensure you update the authoring key from the previous step and choose the Azure datacenter location you wish to use (e.g. westus or westeurope).
 
 ```shell
 msbot clone services --name "SkillTemplate" --luisAuthoringKey "YOUR_AUTHORING_KEY" --folder "DeploymentScripts\msbotClone" --location "westus"
@@ -60,7 +60,7 @@ msbot clone services --name "SkillTemplate" --luisAuthoringKey "YOUR_AUTHORING_K
 
 Once this is complete ensure that you make a note of the .bot file secret provided as this will be required for later steps. At this time, take the secret and update the `botFileSecret` entry in your `appsettings.json` file. This will ensure your Bot can decrypt the secrets.
 
-Update your appsettings.json file with the .bot file path, .bot file secret, and AppInsights intrumentation key (this can be found in the generated .bot file).
+Update your appsettings.json file with the .bot file path, .bot file secret, and AppInsights instrumentation key (this can be found in the generated .bot file).
     
         {
           "botFilePath": ".\\SkillTemplate.bot",
@@ -71,7 +71,7 @@ Update your appsettings.json file with the .bot file path, .bot file secret, and
         }
 ## Testing
 
-Once complete, run your bot project within your development envrionment and open the Bot Framework Emulator. Within the Emulator, choose Open Bot from teh File menu and navigate to the .bot file in your directory.
+Once complete, run your bot project within your development environment and open the Bot Framework Emulator. Within the Emulator, choose Open Bot from the File menu and navigate to the .bot file in your directory.
 
 Then type ```hi``` to verify everything is working.
 
